@@ -52,7 +52,7 @@ const myBook = {
 }
 console.log(toggleReadStatus(myBook));
 
-// Problem seven
+// Problem six
 class Person {
     name : string;
     age: number;
@@ -73,6 +73,14 @@ class Student extends Person {
     return `Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}`;
     }
 }
-const student = new Student("dev", 20, "A");
+const student = new Student("Alice", 20, "A");
 
-console.log(student.getDetails());;
+console.log(student.getDetails());
+
+// Problem seven
+function getIntersection (firstArray: number[], secondArray: number[]): number[] {
+    return firstArray.filter((number) => secondArray.includes(number));
+}
+console.log(
+  getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]),
+);
