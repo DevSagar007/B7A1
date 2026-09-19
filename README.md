@@ -9,17 +9,19 @@ This assignment comprises various problems that demonstrate fundamental TypeScri
 All coding solutions must be implemented in a **single file** named `solutions.ts`.
 
 ## Problem 1:
+
 Create a TypeScript function `filterEvenNumbers` that accepts an array of numbers and returns a new array containing only the even numbers.
 
 ```tsx
 // Sample Input:
-filterEvenNumbers([1, 2, 3, 4, 5, 6])
-
-// Sample Output:
-[2, 4, 6]
+filterEvenNumbers([1, 2, 3, 4, 5, 6])[
+  // Sample Output:
+  (2, 4, 6)
+];
 ```
 
 ## Problem 2:
+
 Write a function `reverseString` that takes a string as input and returns the reversed version of that string.
 
 ```tsx
@@ -27,10 +29,11 @@ Write a function `reverseString` that takes a string as input and returns the re
 reverseString("typescript");
 
 // Sample Output:
-"tpircsepyt";
+("tpircsepyt");
 ```
 
 ## Problem 3:
+
 Define a union type `StringOrNumber` and create a function `checkType` that uses type guards to return "String" if the input is a string or "Number" if the input is a number.
 
 ```tsx
@@ -38,16 +41,17 @@ Define a union type `StringOrNumber` and create a function `checkType` that uses
 checkType("Hello");
 
 // Sample Output 1:
-"String";
+("String");
 
 // Sample Input 2:
 checkType(42);
 
 // Sample Output 2:
-"Number";
+("Number");
 ```
 
 ## Problem 4:
+
 Write a generic function `getProperty` that takes an object and a key, then returns the value of that key. Use constraints to ensure the key exists on the object.
 
 ```tsx
@@ -56,10 +60,11 @@ const user = { id: 1, name: "John Doe", age: 21 };
 getProperty(user, "name");
 
 // Sample Output:
-"John Doe";
+("John Doe");
 ```
 
 ## Problem 5:
+
 Define an interface `Book` with properties `title`, `author`, and `publishedYear`. Create a function `toggleReadStatus` that accepts a `Book` object and returns a new object with an added `isRead` property (boolean), defaulting to `true`.
 
 ```tsx
@@ -77,6 +82,7 @@ toggleReadStatus(myBook);
 ```
 
 ## Problem 6:
+
 Create a class `Person` with a name and age. Then, create a subclass `Student` that adds a `grade` property. Include a method `getDetails` in the `Student` class that returns a string with the student's name, age, and grade.
 
 ```tsx
@@ -85,18 +91,19 @@ const student = new Student("Alice", 20, "A");
 student.getDetails();
 
 // Sample Output:
-"Name: Alice, Age: 20, Grade: A";
+("Name: Alice, Age: 20, Grade: A");
 ```
 
 ## Problem 7:
+
 Create a function `getIntersection` that takes two arrays of numbers and returns a new array containing only the elements that are `present in both arrays`.
 
 ```tsx
 // Sample Input:
-getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7])
-
-// Sample Output:
-[3, 4, 5]
+getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7])[
+  // Sample Output:
+  (3, 4, 5)
+];
 ```
 
 ---
@@ -104,7 +111,6 @@ getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7])
 ## Blog Writing (Choose any two: 10 Marks)
 
 Write an impactful and technically sound blog post covering **two** of the following topics. Your blog should be clear, concise, and include code examples where necessary to illustrate your points.
-
 
 ### Blog Topics:
 
@@ -122,24 +128,25 @@ Write an impactful and technically sound blog post covering **two** of the follo
 
 All solutions must be placed in a single file named `solutions.ts`.
 
-* **Function Names:** Use the exact names specified in the problem descriptions.
-* **Exact Output:** Your return values must match the sample output exactly, including spaces, punctuation, and capitalization.
-    * *Correct:* `'Name: John Doe, Age: 30'`
-    * *Incorrect:* `'name: John Doe, age: 30'`
-* **Clean Code:** Use meaningful variable and class names.
-* **No Noise:** * Do **not** include unnecessary comments.
-* Do **not** include any `console.log` statements; return the values instead.
+- **Function Names:** Use the exact names specified in the problem descriptions.
+- **Exact Output:** Your return values must match the sample output exactly, including spaces, punctuation, and capitalization.
+  - _Correct:_ `'Name: John Doe, Age: 30'`
+  - _Incorrect:_ `'name: John Doe, age: 30'`
+- **Clean Code:** Use meaningful variable and class names.
+- **No Noise:** \* Do **not** include unnecessary comments.
+- Do **not** include any `console.log` statements; return the values instead.
 
 ---
 
 ## 📝 Blog Instructions
 
 Submit each blog post in its own Markdown file:
-* **Format:** Use a separate Markdown (`.md`) file for each blog (e.g., `blog-1.md`, `blog-2.md`).
-* **Structure:** Each post should have a clear **Title**, an **Introduction**, **Body Paragraphs** with code snippets, and a **Conclusion**.
-* **Language:** English/Bangla.
-* **Clarity:** Use proper Markdown headers and code blocks to make the post readable.
-  
+
+- **Format:** Use a separate Markdown (`.md`) file for each blog (e.g., `blog-1.md`, `blog-2.md`).
+- **Structure:** Each post should have a clear **Title**, an **Introduction**, **Body Paragraphs** with code snippets, and a **Conclusion**.
+- **Language:** English/Bangla.
+- **Clarity:** Use proper Markdown headers and code blocks to make the post readable.
+
 ---
 
 ## 📁 File Structure
@@ -159,11 +166,10 @@ Submit each blog post in its own Markdown file:
 
 ### Assignment Deadlines:
 
-* **60 marks:** May 07, 2026, 11:59 PM
-* **50 marks:** May 08, 2026, 11:59 PM
-* **30 marks:** After May 08, 11.59 PM
+- **60 marks:** May 07, 2026, 11:59 PM
+- **50 marks:** May 08, 2026, 11:59 PM
+- **30 marks:** After May 08, 11.59 PM
 
 ---
 
 The code & content must be your own. Avoid `copy-pasting` from documentation or `AI generators
-
