@@ -1,23 +1,28 @@
 
-# How Generics Make TypeScript Code Reusable and Strictly Typed
+---
+
+# `blog-2.md`
+
+```md
+# How Generics Help Us Write Reusable and Type-Safe Code in TypeScript
 
 ## Introduction
 
-Generics are one of the most powerful features of TypeScript. They allow developers to create reusable functions, classes, and components that work with different types while maintaining type safety.
+When working on a project, we often write the same type of logic for different kinds of data. For example, we may need a function that works with numbers, another function that works with strings, and another one that works with objects.
 
-Instead of writing the same logic separately for different data types, generics allow us to write the logic once and reuse it with many types.
+Writing separate functions for every type can create unnecessary code duplication.
 
-## The Problem Without Generics
+Generics solve this problem. They allow us to write reusable code that can work with different types while still keeping TypeScript's type safety.
 
-Suppose we want a function that returns the first item of an array.
+## What Are Generics?
 
-Without generics, we might write separate functions:
+Generics allow us to create a function, class, or interface without deciding the exact type beforehand.
+
+Instead, the type is provided when we use it.
+
+For example:
 
 ```ts
-function getFirstString(items: string[]): string {
-  return items[0];
-}
-
-function getFirstNumber(items: number[]): number {
-  return items[0];
+function identity<T>(value: T): T {
+  return value;
 }

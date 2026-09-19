@@ -2,17 +2,20 @@
 
 ## Introduction
 
-TypeScript is designed to make JavaScript applications safer by checking types during development. However, using the `any` type can remove many of these safety benefits. This is why `any` is often described as a "type safety hole."
+One of the main reasons developers use TypeScript is to catch errors before the code runs. TypeScript gives us type checking so that we can write safer and more predictable code.
 
-When working with unpredictable data, such as API responses or user input, `unknown` is usually a safer choice because TypeScript requires us to check the value before using it.
+However, the `any` type can remove a lot of these benefits. When we use `any`, TypeScript basically stops checking the value. This is why `any` is often called a "type safety hole".
 
-## Why Is `any` a Type Safety Hole?
+For situations where we do not know the type of a value beforehand, `unknown` is usually a better option.
 
-The `any` type tells TypeScript that we can use a value in almost any way without checking its type.
+## What Is `any`?
+
+The `any` type means that a variable can contain any type of value. We can also perform almost any operation on it without getting a TypeScript error.
+
+For example:
 
 ```ts
 let value: any = "Hello";
 
 value.toUpperCase();
 value.toFixed();
-value.someRandomMethod();
